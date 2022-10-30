@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#3985C1">
+
+        <TextView
+            android:id="@+id/top_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="15dp"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="45dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/top_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/table_mid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:stretchColumns="*"
+            android:layout_marginTop="0dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text1_mid"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="전체"
+                    android:textColor="#939393"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text2_mid"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="읽지 않은 메세지"
+                    android:textColor="#3170BD"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text3_mid"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="별표 메세지"
+                    android:textColor="#939393"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text4_mid"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="보낸 메시지"
+                    android:textColor="#939393"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:src="#D0AAAAAA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:text="모든 과목"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:src="#D0AAAAAA" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/mail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="메세지없음"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="'+'을 눌러 새 대화를 만듭니다."
+            android:gravity="center"
+            android:textColor="#C5CBCF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>
